@@ -1,0 +1,141 @@
+<div class="container-fluid p-0 bg-white" id="formulario">
+    
+    <h2 class="text-uppercase pt-5 text-muted text-center">Registrate</h2>
+
+    <div class="container">
+      
+      <form action="/formulario.php" class="bg-light p-4 needs-validation" novalidate>
+        
+        <h4 class="bg-dark text-white text-center p-2">Ingrese los datos</h4>
+        
+        <div class="form-group">
+          
+          <label for="usuario">Ingrese su usuario</label>
+
+          <input type="text" id="usuario" class="form-control" placeholder="Escriba su usuario con mínimo 2 caracteres, máximo 6 caracteres sin usar números" minlength="2" maxlength="6" pattern="(?=.*[A-Za-z]).{2,6}" required>
+
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+
+        </div>
+
+        <div class="form-group">
+          
+          <label for="password">Ingrese su contraseña</label>
+
+          <input type="password" id="password" class="form-control" placeholder="Escriba su contraseña con mínimo 8 caracteres y debe incluir letras en mayúscula, en minúscula y números" minlength="8"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+
+          <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Porfavor llene este campo.</div>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="email">Ingrese su correo electrónico:</label>
+
+          <input type="email" id="email" class="form-control"  placeholder="Escriba su correo" name="email" required>
+
+          <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+
+        </div>
+
+        <div class="form-group">        
+          <label for="color">Elija la razon por la que te quieres unir:</label>
+          <select class="form-control" id="color" name="color" required>
+            <option value="">Seleccione</option>
+            <option value="amarillo">Quiero enterarme de las noticias sobre Saint Motel</option>
+            <option value="azul">Me gustaria comprar merch</option>
+            <option value="rojo">Otro</option>
+          </select>
+          <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Porfavor llene este campo.</div>
+        </div>
+
+
+        <div class="form-group">
+
+          <label>Seleccione su album/EP favorito:</label>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input icheck" name="perro"> The Original Motion Picture
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input icheck" name="gato"> Saint Motelevision
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input icheck" name="conejo"> Voyeur
+            </label>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+
+          <label>¿Desea recibir notificaciones?:</label>
+
+          <div class="form-check">
+            <label class="form-check-label">
+            <input type="radio" class="form-check-input icheck" name="pago" checked required> Si
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+            <input type="radio" class="form-check-input icheck" name="pago" required> No
+            </label>
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>¿Eres un robot?:</label>
+
+          <div class="form-check">
+            <label class="form-check-label">
+            <input type="radio" class="form-check-input icheck" name="robot" checked required> Si
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+            <input type="radio" class="form-check-input icheck" name="robot" required> No
+            </label>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="mensajes">Algun mensaje o recomendacion para nosotros:</label>
+            <textarea class="form-control" rows="5" id="mensajes" required></textarea>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Porfavor llene este campo.</div>
+          </div>
+
+          <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input terminos" type="checkbox" required>
+              <span class="check"></span>Acepto términos y condiciones.
+            <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Porfavor llene este campo.</div>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
